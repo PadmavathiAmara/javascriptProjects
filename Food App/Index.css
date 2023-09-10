@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 98.8vw;
+    /* overflow-y: scroll; */
+}
+
+main{
+    background-color: aqua;
+    width: 100%;
+    /* height: 100vh; */
+    /* background-image: linear-gradient(to bottom, #f87687, #f9616e, #f74b54, #f33336, #eb1212); */
+}
+
+#logo{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 10rem;
+}
+
+
+
+#menuDiv{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    z-index: 3;
+    cursor: pointer;
+    background-color: white;
+}
+
+#menuLogo{
+    width: 3rem;
+    height: 3rem;
+}
+
+#logoName{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 15px;
+}
+
+h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+
+p{
+    padding-bottom: 10px;
+    color: white;
+}
+
+section{
+    display: flex;
+    /* width: 80rem; */
+    height: 35rem;
+}
+
+#textDiv{
+    margin-top: 13rem;
+    margin-left: 14rem;
+}
+
+#textDiv a{
+    width: 6rem;
+    background-color: #de1010;
+    padding: 12px 12px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: .5px solid white;
+    position: relative;
+    z-index: 1;
+    transition: color border 0.5s;
+}
+
+#textDiv a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#textDiv a:hover span{
+    width: 100%;
+    background-color: #fea6b3;
+}
+
+#textDiv a:hover{
+    color: black;
+    border: .5px solid black;
+}
+
+#foodImgsDiv{
+    width: 39rem;
+    height: 35rem;
+    position: relative;
+}
+
+.foodImgs{
+    width: 12rem;
+    height: 20rem;
+}
+
+.foodImgs:hover{
+    width: 13rem;
+    height: 21rem;
+    transition: width height 0.5s;
+}
+
+#food1{
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+}
+
+#food2{
+    position: absolute;
+    top: 5rem;
+    left: 26rem;
+}
+
+#food3{
+    position: absolute;
+    top: 13rem;
+    left: 14rem;
+}
+
+#sideNavBar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15rem;
+    height: 100vh;
+    background-color:#f33336;
+    /* z-index: 2; */
+    transition: 0.5s;
+}
+
+#sideNavBar ul li{
+    list-style: none;
+    padding-top: 6.5rem;
+    text-align: center;
+}
+
+#sideNavBar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+#page2{
+    width: 100%;
+    height: 40rem;
+    background-color: red;
+}
+
+#specialsHeading{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+#page2 aside #left, #right{
+    height: 18.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#page2 aside h3{
+   text-align: center;
+   font-style: italic;
+}
+
+.specials{
+    width: 20rem;
+    height: 14rem;
+}
+
+.specialsDiv{
+    position: relative;
+    height: 14rem;
+}
+
+.effects{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #ff889f);
+    opacity: 0;
+    transition: .5s;
+}
+
+.specialsDiv:hover .effects{
+    opacity: 1;
+}
+
+.foodDesc{
+    width: 80%;
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    opacity: 0;
+}
+
+.foodDesc h3{
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.specialsDiv:hover .foodDesc{
+    opacity: 1;
+    transition: 1s;
+}
+
+/* #page3, #topDiv, #bottomDiv{
+    display: flex;
+    justify-content: center;
+} */
+
+#page3{
+    display: flex;
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    background-color: blue;
+}
+/* .topDiv, .bottomDiv{
+    width: 100vw;
+    height: 100vh;
+} */
+
+.choose{
+    width: 13rem;
+    height: 13rem;
+}
+
+#leftText{
+    width: 25rem;
+}
+
+#bottomDiv{
+    width: 35rem;
+}
+
+#leftText p{
+    color: black;
+    position: absolute;
+    top: 17rem;
+    padding: 19px 6px;
+    left: 20rem;
+}
+
+#leftText h3{
+    position: absolute;
+    top: 14rem;
+    left: 20rem;
+    font-size: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#rightImages{
+    position: absolute;
+    left: 50rem;
+    top: 5rem;
+}
+
+.textandimg{
+    display: flex;
+    flex-direction: column;
+    width: 13.5rem;
+    height: 15rem;
+    background-color: orange;
+}
+
+.textandimg img:hover{
+    width: 13.5rem;
+    height: 13.5rem;
+}
+
+.textandimg span{
+    text-align: center;
+    padding: 5px;
+}
+
+#topDiv, #bottomDiv{
+    display: flex;
+}
+
+#page4{
+    width: 100%;
+    height: 44rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+}
+
+.eventsImages{
+    width: 24rem;
+    height: 24rem;
+}
+
+.eventsDivs{
+    display: flex;
+    gap: 1rem;
+    width: 56rem;
+    animation: slide 12s infinite ease-in-out; 
+    /* animation-play-state: running; */
+}
+
+/* .eventsDivs:hover{
+animation-play-state: paused;
+} */
+
+.eventsDivs p{
+    color: black;
+    padding: 0px 10px 14px;
+}
+
+#page4 h3{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+#eventsDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    overflow: hidden;
+    width: 56rem;
+}
+
+#eventsText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 31rem;
+}
+
+#eventsText a{
+    width: 6rem;
+    background-color: #de1010;
+    padding: 12px 12px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: .5px solid white;
+    position: relative;
+    z-index: 1;
+    transition: color border 0.5s;
+}
+
+#eventsText a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#eventsText a:hover span{
+    width: 100%;
+    background-color: #fea6b3;
+}
+
+#eventsText a:hover{
+    color: black;
+    border: .5px solid black;
+}
+
+#eventsText h3{
+    font-size: 2rem;
+    font-style: italic;
+    color: #de1010;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(56rem);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-56rem);
+    }
+    
+}
+
+#page5{
+    background-color: pink;
+    width: 100%;
+    height: 43.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bigBox{
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
